@@ -18,6 +18,9 @@ obj/compute.o: obj src/compute.c
 obj/structs/Matrix.o: obj/structs src/structs/Matrix.c src/structs/Matrix.h
 	gcc -c -o obj/structs/Matrix.o $(DEBUG) -Wall src/structs/Matrix.c
 
+obj/structs/Message.o: obj/structs src/structs/Message.c src/structs/Message.h
+	gcc -c -o obj/structs/Message.o $(DEBUG) -Wall src/structs/Message.c
+
 dist:
 	mkdir -p dist
 
