@@ -27,5 +27,5 @@ To use the sample data, run
 ## Start `compute`
 
 ```shell
-./dist/compute
+./dist/compute thread_pool_size [-n]
 ```
