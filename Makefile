@@ -27,6 +27,9 @@ obj/functions/packageDotProduct.o: obj/functions src/functions/packageDotProduct
 obj/functions/processDotProduct.o: obj/functions src/functions/processDotProduct.c src/functions/processDotProduct.h src/structs/Message.h
 	gcc -c -o obj/functions/processDotProduct.o -std=c99 -D_GNU_SOURCE $(DEBUG) -Wall src/functions/processDotProduct.c
 
+obj/functions/computeDotProduct.o: obj/functions src/functions/computeDotProduct.c src/functions/computeDotProduct.h src/structs/Message.h
+	gcc -c -o obj/functions/computeDotProduct.o -std=c99 -D_GNU_SOURCE $(DEBUG) -Wall src/functions/computeDotProduct.c
+
 dist:
 	mkdir -p dist
 
