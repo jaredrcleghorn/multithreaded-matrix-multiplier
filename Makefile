@@ -22,7 +22,7 @@ obj/structs/Message.o: obj/structs src/structs/Message.c src/structs/Message.h
 	gcc -c -o obj/structs/Message.o -std=c99 $(DEBUG) -Wall src/structs/Message.c
 
 obj/functions/packageDotProduct.o: obj/functions src/functions/packageDotProduct.c src/functions/packageDotProduct.h src/structs/Message.h
-	gcc -c -o obj/functions/packageDotProduct.o -std=c99 $(DEBUG) -Wall src/functions/packageDotProduct.c
+	gcc -c -o obj/functions/packageDotProduct.o -std=c99 -D_GNU_SOURCE $(DEBUG) -Wall src/functions/packageDotProduct.c
 
 dist:
 	mkdir -p dist
