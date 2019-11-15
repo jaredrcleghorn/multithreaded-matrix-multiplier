@@ -15,7 +15,7 @@ make debug
 ## Start `package`
 
 ```shell
-./dist/package
+./dist/package input_matrix_file_1 input_matrix_file_2 output_matrix_file seconds_between_thread_creation
 ```
 
 ## Start `compute`
