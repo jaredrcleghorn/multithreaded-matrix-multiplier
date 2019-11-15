@@ -6,7 +6,7 @@
 #include "../structs/Matrix.h"
 
 // Package a dot product.
-void* packageDotProduct(void* args);
+void* packageDotProduct(void* arg);
 
 typedef struct PackageDotProductArgument {
 	int jobId;
